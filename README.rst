@@ -11,7 +11,10 @@ Add canvas element with id of ``konamiCode`` as first child within ``body``
 
 .. code:: html
 
-   <canvas id="konamiCode"></canvas>
+   <body>
+     <canvas id="konamiCode"></canvas>
+     ...
+   </body>
 
 Include script ``konami-trix.umd.js``
 
