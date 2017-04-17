@@ -1,13 +1,13 @@
 {
   "name": "konami-trix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "konami code + the matrix",
   "main": "dist/konami-trix.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha src/konami-trix.test.js -w",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --out-dir dist src",
+    "build:main": "babel --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename konami-trix.umd.js"
   },
   "repository": {
@@ -37,6 +37,8 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "webpack": "^2.3.3"
