@@ -1,18 +1,20 @@
 {
   "name": "konami-trix",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "konami code + the matrix",
   "main": "dist/konami-trix.js",
   "scripts": {
     "test": "mocha src/konami-trix.test.js -w",
+    "commit": "git-cz",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename konami-trix.umd.js"
+    "build:umd": "webpack --output-filename konami-trix.umd.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickatnight/konami-trix.git"
+    "url": "https://github.com/nickatnight/konami-trix.git"
   },
   "keywords": [
     "fun",
@@ -24,11 +26,14 @@
     "games"
   ],
   "author": "nickatnight",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nickatnight/konami-trix/issues"
   },
   "homepage": "https://github.com/nickatnight/konami-trix#readme",
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
   "dependencies": {
     "jquery": "^3.2.1"
   },
@@ -38,10 +43,17 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
     "chai": "^3.5.0",
+    "commitizen": "2.9.6",
+    "condition-circle": "1.5.0",
+    "cz-conventional-changelog": "2.0.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.2",
     "webpack": "^2.3.3"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   },
   "babel": {
     "presets": [
