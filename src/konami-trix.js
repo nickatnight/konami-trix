@@ -93,3 +93,5 @@ function konamiTrix() {
 }
 
 konamiTrix();
+
+module.exports = {konamiTrix: konamiTrix};

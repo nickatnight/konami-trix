@@ -1,8 +1,18 @@
 machine:
   node:
     version: "0.12"
+
+dependencies:
+  override:
+    - npm i -g npm@^2.0.0
+    - npm install
+
 test:
   override:
-    - npm run test
-  post:
-    - npm run semantic-release || true
+    - npm run test:single
+
+deployment:
+  npm_cdn:
+    branch: develop
+    commands:
+      - npm run semantic-release || true

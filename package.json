@@ -5,6 +5,7 @@
   "main": "dist/konami-trix.js",
   "scripts": {
     "test": "mocha src/konami-trix.test.js -w",
+    "test:single": "mocha src/konami-trix.test.js",
     "commit": "git-cz",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
