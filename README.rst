@@ -26,6 +26,6 @@ Include script ``konami-trix.umd.js`` npmcdn_
 
 Enter :arrow_up: :arrow_up: :arrow_down: :arrow_down: :arrow_left: :arrow_right: :arrow_left: :arrow_right: :b: :a:
 
-original Matrix rain code taken from here_.
+inspired from this canvas matrix_.
 
-.. _here: http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
+.. _matrix: http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
