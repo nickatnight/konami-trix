@@ -16,7 +16,9 @@ Add canvas element with id of ``konamiCode`` as first child within ``body``
      ...
    </body>
 
-Include script ``konami-trix.umd.js``
+Include script ``konami-trix.umd.js`` npmcdn_
+
+.. _npmcdn: https://npmcdn.com/konami-trix@1.1.1/dist/konami-trix.umd.js
 
 .. code:: html
 
