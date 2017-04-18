@@ -1,8 +1,9 @@
 {
   "name": "konami-trix",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "konami code + the matrix",
   "main": "dist/konami-trix.js",
+  "readme": "README.rst",
   "scripts": {
     "test": "mocha src/konami-trix.test.js -w",
     "test:single": "mocha src/konami-trix.test.js",
